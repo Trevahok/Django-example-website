@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A decent login page</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href={% static "login/login.css"%}>
+    </head>
+    <body >
+        {% if user == '404' %}
+        <center>
+        <h5 style="color: red">Invalid login</h5>
+        </center>
+        <br>
+        {% endif %}
+        <div class="main-box">
+            <h1>Login</h1>
+            <div class="data-box">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <br>
+                    <input class="button" type="submit" value="Login">
+                </form>
+            </div>
+        </div> 
+    </body>
+</html>

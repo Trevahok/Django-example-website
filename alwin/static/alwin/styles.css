@@ -1,0 +1,133 @@
+ * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+
+.top
+{
+  position: fixed;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  bottom:1.5rem;
+  right:1.5rem;
+  width:3rem;
+  height:3rem;
+  line-height: 3rem;
+  font-size:1.5rem;
+  border-radius: .5rem;
+  border:1px solid white;
+  box-shadow: 0 0 2px 0px white;
+  transition: opacity 1s ease;
+  opacity:0;
+  cursor: pointer;
+}
+
+.top.scrolled 
+{
+  color:#000;
+  text-shadow: 0px 0px 2px #fff;
+  opacity:0;
+}
+
+ul 
+{
+  list-style: none;
+  text-align: center;
+}
+
+li
+{
+  display: inline-block;
+}
+a 
+{
+  text-decoration: none; 
+  color:white;
+  display: block;
+  padding:1rem ;
+  transition:color 0.1s ease;
+}
+nav 
+{
+  display: block;
+  background-color: black;
+  border-bottom:2px solid white;
+  width:100%;
+  height:50px;
+  position: fixed;
+}
+
+li.selected a
+{
+  color:red;
+}
+
+.box
+{
+  height:1000px;
+  border-bottom:2px solid white;
+  padding-top: 50px;
+  color:black;
+  font-size:50px;
+  text-align: center;
+}
+#home
+{
+  background-color: #FF9800;
+}
+#about
+{
+  background-color: #FFA726;
+}
+
+#clients
+{
+  background-color: #FFB74D;
+}
+
+a : hover 
+{
+    color: grey;
+}
+
+#contact 
+{
+  background-color: #FFCC80;
+}
+h1
+{
+    float: center;
+    font-size: 50px;
+}
+
+h5
+{
+    font-size: 20px;
+    float: center;
+}
+img
+{
+    border: 10;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 9px;
+    max-width: 70%;
+    height: auto;
+    
+}
+cite
+{
+    font-size: 20px;
+}
+#logo
+{
+    border-radius: 90%;
+    max-width: 90%;
+    height: 90px;
+    width: 120px;
+}

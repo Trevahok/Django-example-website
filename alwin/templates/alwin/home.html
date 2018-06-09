@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Alwin school</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href={% static 'alwin/styles.css' %}>
+    </head>
+    <body>
+        <nav role='navigation'>
+          <ul class="nav-main">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#clients">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="box" id="home">
+            <img id="logo" src={% static "alwin/logo.jpg"%} style="float: left">
+            <h1>Alwin school </h1>
+            <h5>where realities become dreams.</h5>
+            <br>
+            <img src={% static "alwin/md-1.jpg"%} width=90% height=50%>
+            <br>
+            <cite>Our slave master who shepherds us.  <sub>*the irony*</sub></cite>
+        </div>
+        <div class="box" id="about">About</div>
+        <div class="box" id="clients">Gallery</div>
+        <div class="box" id="contact">Contact</div>
+    </body>
+</html>
